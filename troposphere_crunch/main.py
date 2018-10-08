@@ -103,10 +103,23 @@ def main() -> int:
 
             deploy_results.append((stack.name, subprocess.run(command, capture_output=True)))
 
-        if any(r.returncode != 0 for _, r in deploy_results):
+        errors = []
+
+        for r in deploy_results:
+            _, result = r
+
+            if result.returncode != 0:
+                stderr = result.stderr.decode('utf-8')
+
+                if 'No changes to deploy' in stderr:
+                    continue
+
+                errors.append(r)
+
+        if errors:
             print('Some stacks failed to deploy!', file=sys.stderr)
 
-            for stack_name, result in deploy_results:
+            for stack_name, result in errors:
                 if result.returncode != 0:
                     stdout = result.stdout.decode('utf-8')
                     if stdout:
