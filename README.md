@@ -1,6 +1,11 @@
 # troposphere-crunch
 A tool to compile and (optionally) deploy Troposphere templates with AWS CLI and a very opinionated structure.
 
+## Installation
+
+Install through pip/pipenv/poetry/whatever as usual. It's [on
+PyPi](https://pypi.org/project/troposphere_crunch/).
+
 ## Usage
 
 You'll need a `stacks.toml` file that defines the following:
