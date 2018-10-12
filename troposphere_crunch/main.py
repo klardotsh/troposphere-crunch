@@ -64,6 +64,9 @@ def main() -> int:
         if 'output_dir' in stack:
             stack_kwargs['output_dir'] = stack['output_dir']
 
+        if 'parameters' in stack:
+            stack_kwargs['parameters'] = stack['parameters']
+
         stacks.append(Stack(**stack_kwargs))
 
     if args.clean:
@@ -100,6 +103,13 @@ def main() -> int:
             for capability in stack.capabilities:
                 command.append('--capabilities')
                 command.append(capability)
+
+            if stack.parameters:
+                command.append('--parameter-overrides')
+                command.append(' '.join(
+                    f'{k}={v}'
+                    for k, v in stack.parameters.items()
+                ))
 
             deploy_results.append((stack.name, subprocess.run(command, capture_output=True)))
 

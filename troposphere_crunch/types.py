@@ -1,6 +1,6 @@
 import os
-from dataclasses import dataclass
-from typing import Collection, Container
+from dataclasses import dataclass, field
+from typing import Collection, Container, List
 
 from troposphere.constants import US_WEST_2
 
@@ -11,6 +11,7 @@ class Stack:
     output_dir: str
     capabilities: Collection = tuple()  # noqa
     region: str = US_WEST_2
+    parameters: List[dict] = field(default_factory=list)
 
     @property
     def name(self) -> str:

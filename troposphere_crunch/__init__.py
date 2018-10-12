@@ -4,4 +4,4 @@ __description__ = (
     'and a very opinionated structure.'
 )
 __doc__ = __description__
-__version__ = '1.0.1'
+__version__ = '1.0.2'
