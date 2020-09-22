@@ -1,5 +1,11 @@
 # troposphere-crunch
-A tool to compile and (optionally) deploy Troposphere templates with AWS CLI and a very opinionated structure.
+A tool to compile and (optionally) deploy Troposphere templates with AWS CLI and
+a very opinionated structure.
+
+> 21 Sept 2020: This is not, and has not for quite some time been, maintained,
+> mostly because I never really ended up using it to begin with. Fork it and do
+> whatever with it. The license was previously MIT, but it has now been changed
+> to Creative Commons Zero. Enjoy!
 
 ## Installation
 
@@ -43,24 +49,27 @@ optional arguments:
 
 ## License
 
-MIT License
+[Creative Commons CC0 1.0
+Universal](https://creativecommons.org/publicdomain/zero/1.0/), summarized
+below:
 
-Copyright (c) 2018 Josh Klar <josh@klar.sh>
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+>The person who associated a work with this deed has dedicated the work to the
+public domain by waiving all of his or her rights to the work worldwide under
+copyright law, including all related and neighboring rights, to the extent
+allowed by law.
+>
+>You can copy, modify, distribute and perform the work, even for commercial
+purposes, all without asking permission. See Other Information below.
+>
+> **Other Information**
+>
+> - In no way are the patent or trademark rights of any person affected by CC0,
+>   nor are the rights that other persons may have in the work or in how the
+>   work is used, such as publicity or privacy rights.
+>
+> - Unless expressly stated otherwise, the person who associated a work with
+>   this deed makes no warranties about the work, and disclaims liability for
+>   all uses of the work, to the fullest extent permitted by applicable law.
+>
+> - When using or citing the work, you should not imply endorsement by the
+>   author or the affirmer.
